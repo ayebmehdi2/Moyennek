@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#29B6F6</color>
+    <color name="colorAccent">#29B6F6</color>
+    <color name="gray">#EEE</color>
+    <color name="bkgg">#EEEEEE</color>
+
+
+    <color name="hdrclr">#426D80</color>
+    <color name="clg">#42A5F5</color>
+
+    <color name="pere">#EF5350</color>
+
+    <color name="dinfo">#7E57C2</color>
+
+    <color name="deco">#26C6DA</color>
+
+    <color name="dsns">#26A69A</color>
+
+    <color name="dltre">#4FC3F7</color>
+
+    <color name="tinfo">#EC407A</color>
+
+    <color name="teco">#9CCC65</color>
+
+    <color name="tsns">#FFCA28</color>
+
+    <color name="tltre">#FF7043</color>
+
+    <color name="tmath">#9E9E9E</color>
+
+    <color name="ttech">#8D6E63</color>
+
+    <color name="binfo">#FFEE58</color>
+
+    <color name="beco">#66BB6A</color>
+
+    <color name="bsns">#FFA726</color>
+
+    <color name="bltre">#78909C</color>
+
+    <color name="bmath">#5C6BC0</color>
+
+    <color name="btech">#42A5F5</color>
+
+    <color name="bsport">#D4E157</color>
+
+
+</resources>

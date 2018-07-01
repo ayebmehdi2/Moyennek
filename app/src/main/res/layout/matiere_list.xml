@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#9E9E9E"></View>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:paddingBottom="50dp"
+            android:drawSelectorOnTop="true"
+            android:animationCache="false"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true" />
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true">
+    </View>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:text="Calcul"
+        android:textColor="#FFF"
+        android:textSize="13sp"
+        android:background="@drawable/myrect"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:id="@+id/btnPlaceOrder"/>
+
+
+    <TextView
+        android:id="@+id/mouaadel"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/myrect"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="112dp"
+        android:layout_height="48sp"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:text="0.0"
+        android:textColor="#FFF"
+        android:padding="5dp"/>
+
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-2067708359225937/4997561142">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

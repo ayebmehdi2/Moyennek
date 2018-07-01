@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mhm"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
+                android:alpha="0.5"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#29B6F6"
+                android:alpha="0.5">
+            </View>
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#29B6F6"
+                android:alpha="0.8"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="quel classe"
+                    android:textSize="20sp"
+                    android:textColor="#FCFFEE" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/list_vecture"
+                android:layout_margin="16dp"/>
+            <TextView
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="55sp"
+                android:text="MOYENNEK"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#eee"/>
+
+            <ImageView
+                android:id="@+id/ab"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:src="@drawable/about"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:text="Bonjour à tous\nCette application vous permet de calculer votre moyenne facilement."/>
+
+
+                <GridView
+                    android:id="@+id/gann"
+                    android:numColumns="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"/>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/hedr"
+                    android:layout_marginTop="16dp">
+                    <TextView
+                        android:id="@+id/deuxieme"
+                        android:text="Deuxième"
+                        style="@style/TEXT" />
+
+                </FrameLayout>
+                <GridView
+                    android:id="@+id/gdexeme"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:numColumns="2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/hedr"
+                    android:layout_marginTop="16dp">
+                    <TextView
+                        android:id="@+id/troiseme"
+                        android:text="Troisième"
+                        style="@style/TEXT" />
+
+                </FrameLayout>
+                <GridView
+                    android:numColumns="3"
+                    android:id="@+id/gtrxeme"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"/>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/hedr"
+                    android:layout_marginTop="16dp">
+                    <TextView
+                        android:id="@+id/bakaloria"
+                        android:text="Bac"
+                        style="@style/TEXT" />
+                </FrameLayout>
+
+                <GridView
+                    android:numColumns="3"
+                    android:id="@+id/gbcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                </View>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-2067708359225937/4997561142">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
